@@ -1,0 +1,460 @@
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  margin: 0 auto;
+  background-color: #2E2E2E;
+  color: #fff;
+  // font-family: 'Noto Serif JP', serif;
+  // font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto Slab', serif;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.container{
+  max-width: 1150px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.header{
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 762px;
+  &-menu__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-menu__inner{
+    position: relative;
+  }
+  &-menu__icon{
+    position: absolute;
+    top: 29.02px;
+  }
+  &-menu__item{
+    margin-top: 29px;
+  }
+  &-menu__item p{
+    font-family: 'Redressed', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 10px;
+    padding: 10.98px 0 0 26.92px;
+  }
+  &-menu__item a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 40px;
+  }
+  &-menu__search{
+    padding: 8.98px 28.31px 0 0;
+  }
+  &-intro{
+    margin-top: 193px;
+  }
+  &-intro__text{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &-intro__title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 57.33px;
+    line-height: 80px;
+    margin-bottom: 50px;
+  }
+  &-intro__btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8531;
+    padding: 22px 46px 22px 45px;
+  }
+}
+.new{
+  margin-top: 100px;
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item__first{
+    background-image: url(../images/new-image1.jpg);
+    width: 555px;
+    height: 297px;
+    padding: 100px 0 0 50px;
+  }
+  &-item__second{
+    background-image: url(../images/new-image2.jpg);
+    width: 555px;
+    height: 297px;
+    padding: 100px 0 0 50px;
+  }
+  &-item__title{ 
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 11px;
+  }
+  &-item__text{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    padding-bottom: 27px;
+  }
+  &-item__link{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &-item__link img{
+    padding-left: 6px;
+  }
+}
+.seller{
+  margin-top: 112px;
+  &-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 37.9px;
+    line-height: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  &-btn{
+    text-align: center;
+    padding-bottom: 71px;
+  }
+  &-btn button{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    border: 1px solid #FF8531;
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    opacity: 0.5;
+    margin-right: 20px;
+  }
+  &-btn button:hover{
+    background-color: #FF8531;
+    opacity: 1;
+  }
+  &-btn__floor{
+    padding: 11px 19px 11px 24px;
+  }
+  &-btn__indoor{
+    padding: 11px 40px 11px 43px;
+  }
+  &-btn__outdoor{
+    padding: 11px 36px 11px 38px;
+  }
+  &-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-swiper{
+    background-color: #494949;
+    width: 262px;
+    height: 330px;
+    margin-bottom: 36px;
+    border-radius: 5px;
+  }
+  &-inner{
+    position: relative;
+  }
+  &-inner__shop{
+    position: absolute;
+    z-index: 5;
+    top: -28px;
+    right: -18px;
+  }
+  &-inner__shop:hover{
+    cursor: pointer;
+  }
+  &-item__silk{
+    padding: 9px 67px 9px 64px;
+  }
+  &-item__tripod{
+    padding: 6px 36px 18px;
+  }
+  &-item__floor{
+    padding: 16px 43px 23px;
+  }
+  &-item__boom{
+    padding: 0 69px 3px;
+  }
+  &-item__mid{
+    padding: 6px 16px 0;
+  }
+  &-item__mushroom{
+    padding: 6px 16px 14px;
+  }
+  &-item__rock{
+    padding: 6px 16px 14px;
+  }
+  &-item__morbid{
+    padding: 6px 16px 14px;
+  }
+  &-item__text{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 10px 30px;
+  }
+  &-item__price{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FF8531;
+    padding-left: 30px;
+  }
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 21px;
+}
+.swiper-pagination-bullet{
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+  &-active{
+    background-color: #FEAB4B;
+    border: 3px solid #E9E9E9;
+  }
+  &-active-prev{
+    background-color: #360050;
+  }
+  &-active-prev-prev{
+    background-color: #FF7A0F;
+  }
+  &-active-next{
+    background-color: #FF7A0F;
+  }
+  &-active-next-next{
+    background-color: #360050;
+  }
+  &-active-2{
+    background-color: #BD6B24;
+  }
+}
+.collection{
+  margin-top: 131px;
+  &-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-inner{
+    position: relative;
+  }
+  &-inner__intro{
+    margin-bottom: 71px;
+  }
+  &-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 37.9px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  &-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 444px;
+  }
+  &-inner__items{
+    display: flex;
+  }
+  &-inner__item:first-child{
+    margin-right: 31px;
+  }
+  &-inner__item-name{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+  &-inner__item-price{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FF8531;
+    margin-top: 10px;
+  }
+  &-inner__item-btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #FF8531;
+    border-radius: 5px;
+    color: #FF8531;
+    background-color: #2E2E2E;
+    opacity: 0.9;
+    padding: 12px 43px 18px 28px;
+    margin-top: 25px;
+  }
+  &-inner__item-btn:hover{
+    background-color: #FF8531;
+    color: #fff;
+  }
+  &-inner__btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 22px 51px;
+    color: #FF8531;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    left: 175px;
+  }
+}
+.shop{
+  margin-top: 136px;
+  background-image: url(../images/shop-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 37.9px;
+    line-height: 59px;
+    padding: 104px 0 24px;
+    max-width: 487px;
+  }
+  &-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 436px;
+    opacity: 0.7
+  }
+  &-btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 22px 51px;
+    color: #fff;
+    background-color: #FF8531;
+    border: none;
+    margin: 43px 0 107px;
+  }
+}
+.our-blog{
+  margin-top: 124px;
+  &__title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 37.9px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 51px;
+    height: 37px;
+  }
+  &__item{
+    margin-bottom: 78px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 23px;
+    padding: 28px 0 20px;
+  }
+  &__item-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 363px;
+    padding-bottom: 40px;
+  }
+  &__item-link{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FF8531;
+    opacity: 0.9;
+  }
+  &__outro{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF8531;
+    border-radius: 10px;
+  }
+  &__outro-title{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    padding: 45px 0 20px 40px;
+  }
+  &__outro-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    opacity: 0.8;
+    padding: 0 0 44px 40px;
+  }
+  &__label{
+    margin: 45px 45px 45px 0;
+    position: relative;
+  }
+  &__input{
+    padding: 21px 0 21px 21px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 456px;
+  }
+  &__input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FF8531;
+    opacity: 0.7;
+  }
+  &__label-btn{
+    padding: 18px 35px 17.41px 34px;
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    right: 0;
+    top: 1px;
+  }
+}
